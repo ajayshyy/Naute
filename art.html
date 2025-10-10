@@ -122,13 +122,25 @@
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <button class="nav-btn" onclick="location.href='home.html'">
+            <span class="nav-label">HOME</span>
+        </button>
+        <button class="nav-btn" onclick="location.href='shop.html'">
+            <span class="nav-label">SHOP</span>
+        </button>
+        <button class="nav-btn" onclick="location.href='show.html'">
+            <span class="nav-label">SHOW</span>
+        </button>
+        <button class="nav-btn" onclick="location.href='art.html'">
+            <span class="nav-label">MUSIC</span>
+        </button>
+    </nav>
     <video class="video-bg" src="58C768F8-0B32-4066-A902-A026FCF1FC98.mov" autoplay loop muted playsinline id="artistVideo"></video>
     <div class="overlay" id="artistOverlay">
         <span class="artist-title">AJAY</span>
     </div>
     <div class="content">
-        <button id="artistMusicToggle" style="position:absolute;right:24px;top:24px;background:linear-gradient(90deg,#222,#b0b0b0);color:#fff;border:2px solid #b0b0b0;border-radius:12px;padding:8px 18px;font-family:'Oswald','Roboto',Arial,sans-serif;font-size:1rem;z-index:10;cursor:pointer;">Play Music</button>
-        <audio id="artistMusic" src="ajay mob MP3" loop></audio>
         <div class="desc"> <!-- Add your descriptive text here --> </div>
         <div class="links">
             <a href="#" class="artist-link">Link One</a>
@@ -146,21 +158,6 @@
             } else {
                 video.classList.remove('shrink');
                 overlay.classList.remove('shrink');
-            }
-        });
-        // Music toggle
-        const artistMusicBtn = document.getElementById('artistMusicToggle');
-        const artistMusic = document.getElementById('artistMusic');
-        let artistPlaying = false;
-        artistMusicBtn.addEventListener('click', function() {
-            if (!artistPlaying) {
-                artistMusic.play();
-                artistMusicBtn.textContent = 'Pause Music';
-                artistPlaying = true;
-            } else {
-                artistMusic.pause();
-                artistMusicBtn.textContent = 'Play Music';
-                artistPlaying = false;
             }
         });
     </script>
