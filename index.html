@@ -149,7 +149,16 @@
             const password = document.getElementById('password').value;
             // Password is now 'CONGRATULATIONS77'
             if (password === 'CONGRATULATIONS77') {
-                window.location.href = 'home.html'; // Redirect to your main page
+                // Play music before redirect
+                var audio = document.createElement('audio');
+                audio.src = 'ajay mob MP3';
+                audio.autoplay = true;
+                audio.loop = true;
+                audio.style.display = 'none';
+                document.body.appendChild(audio);
+                setTimeout(function() {
+                    window.location.href = 'home.html'; // Redirect to your main page
+                }, 500); // Give a brief moment for music to start
             } else {
                 errorMsg.style.display = 'block';
             }
