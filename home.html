@@ -73,8 +73,6 @@
 </head>
 <body>
     <nav class="navbar">
-    <button id="musicToggle" style="position:absolute;right:24px;top:24px;background:linear-gradient(90deg,#222,#b0b0b0);color:#fff;border:2px solid #b0b0b0;border-radius:12px;padding:8px 18px;font-family:'Oswald','Roboto',Arial,sans-serif;font-size:1rem;z-index:10;cursor:pointer;">Play Music</button>
-    <audio id="bgMusic" src="AJAY - MOB MP3.mp3" loop></audio>
         <button class="nav-btn" onclick="location.href='home.html'">
             <span class="nav-label">HOME</span>
         </button>
@@ -85,26 +83,10 @@
             <span class="nav-label">SHOW</span>
         </button>
         <button class="nav-btn" onclick="location.href='art.html'">
-            <span class="nav-label">ARTISTS</span>
+            <span class="nav-label">MUSIC</span>
         </button>
     </nav>
     <div class="main-content">
-    <script>
-        const musicBtn = document.getElementById('musicToggle');
-        const bgMusic = document.getElementById('bgMusic');
-        let playing = false;
-        musicBtn.addEventListener('click', function() {
-            if (!playing) {
-                bgMusic.play();
-                musicBtn.textContent = 'Pause Music';
-                playing = true;
-            } else {
-                bgMusic.pause();
-                musicBtn.textContent = 'Play Music';
-                playing = false;
-            }
-        });
-    </script>
         <!-- Homepage intentionally left blank for now -->
     </div>
 </body>
