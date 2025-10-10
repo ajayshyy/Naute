@@ -192,29 +192,37 @@
 
     <section class="music-section">
         <video class="video-bg" src="58C768F8-0B32-4066-A902-A026FCF1FC98.mov" autoplay loop muted playsinline></video>
-    </section>
-    <section class="box-section">
-        <div class="center-box">
+        <div class="video-overlay">
             <span class="artist-title">AJAY</span>
-            <div class="desc">First music video description or info here.</div>
         </div>
     </section>
+    <section class="text-section"></section>
     <section class="music-section">
         <video class="video-bg" src="58C768F8-0B32-4066-A902-A026FCF1FC98.mov" autoplay loop muted playsinline></video>
-    </section>
-    <section class="box-section">
-        <div class="center-box">
+        <div class="video-overlay">
             <span class="artist-title">NEXT ARTIST</span>
-            <div class="desc">Second music video description or info here.</div>
         </div>
     </section>
-        .box-section {
+    <section class="text-section"></section>
+        .text-section {
             width: 100vw;
-            min-height: 60vh;
+            min-height: 40vh;
+            background: #000;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #000;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            pointer-events: none;
         }
 
     <style>
