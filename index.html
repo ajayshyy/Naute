@@ -132,12 +132,10 @@
 <body>
     <img src="6759EFE7-E24D-4B4F-A072-5ABEBAFC6169.png" alt="Logo Background" class="background-logo">
     <div class="login-container">
-        <form id="loginForm">
-            <div class="slanted-box">
-                <label for="password" class="slanted-label">ENTER PASSWORD</label>
-                <div id="errorMsg" class="error" style="display:none;">Incorrect password. Try again.</div>
-                <input type="password" id="password" class="graffiti-input" placeholder="Enter password" required autocomplete="off">
-            </div>
+        <form id="loginForm" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+            <label for="password" class="slanted-label" style="margin-bottom:18px;">ENTER PASSWORD</label>
+            <div id="errorMsg" class="error" style="display:none;">Incorrect password. Try again.</div>
+            <input type="password" id="password" class="graffiti-input" placeholder="Enter password" required autocomplete="off" style="margin-bottom:18px;">
             <button type="submit" class="enter-btn" style="margin-top:24px;">ENTER</button>
         </form>
     </div>
