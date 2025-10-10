@@ -29,6 +29,43 @@
             border-bottom: 1.5px solid #222;
             z-index: 10;
         }
+        .nav-btn {
+            margin: 0 24px;
+            padding: 0;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-label {
+            font-family: 'Oswald', 'Roboto', Arial, sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 2px;
+            padding: 0 32px;
+            border: 2px solid #eaeaea;
+            border-radius: 16px;
+            background: linear-gradient(90deg, #222 0%, #444 100%);
+            box-shadow: 0 2px 12px rgba(180,180,180,0.12);
+            transition: border 0.2s, color 0.2s;
+        }
+        .nav-btn:hover .nav-label {
+            border: 2px solid #b0b0b0;
+            color: #b0b0b0;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                padding: 12px 0 12px 0;
+            }
+            .nav-label {
+                font-size: 1rem;
+                padding: 0 16px;
+            }
+        }
         body {
             padding-top: 80px;
         }
