@@ -1,0 +1,159 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Permanent+Marker&display=swap');
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #000;
+            font-family: 'Montserrat', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .background-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60vw;
+            max-width: 500px;
+            min-width: 220px;
+            opacity: 0.18;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .login-container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100vw;
+            height: 100vh;
+            padding-bottom: 10vh;
+        }
+        .slanted-box {
+            background: transparent;
+            border-radius: 18px;
+            border: 2.5px solid #fff;
+            box-shadow: 0 2px 12px rgba(255,255,255,0.12);
+            transform: skew(-12deg, -2deg) rotate(-3deg);
+            padding: 18px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 220px;
+            max-width: 340px;
+            margin-bottom: 18px;
+        }
+        .slanted-label {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 1px 1px 0 #222, 0 0 8px #fff;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        .graffiti-input {
+            font-family: 'Permanent Marker', cursive, Arial, sans-serif;
+            font-size: 1.1rem;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+            outline: none;
+            background: transparent;
+            color: #fff;
+            box-shadow: none;
+            margin-bottom: 0;
+            width: 100%;
+            font-weight: 400;
+            text-shadow: 1px 1px 0 #222, 0 0 6px #fff;
+        }
+        .enter-btn-box {
+            background: transparent;
+            border-radius: 18px;
+            border: 2.5px solid #fff;
+            box-shadow: 0 2px 12px rgba(255,255,255,0.12);
+            transform: skew(-12deg, -2deg) rotate(-3deg);
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 220px;
+            max-width: 340px;
+        }
+        .enter-btn {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 36px;
+            cursor: pointer;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0 #222, 0 0 8px #fff;
+        }
+        .enter-btn:focus {
+            outline: none;
+        }
+        .error {
+            color: #ff3b3b;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 0 #fff, 0 0 6px #000;
+        }
+        @media (max-width: 600px) {
+            .background-logo {
+                width: 90vw;
+                min-width: 120px;
+                max-width: 320px;
+            }
+            .graffiti-box {
+                min-width: 180px;
+                max-width: 95vw;
+                padding: 18px 8vw 16px 8vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="6759EFE7-E24D-4B4F-A072-5ABEBAFC6169.png" alt="Logo Background" class="background-logo">
+    <div class="login-container">
+        <form id="loginForm">
+            <div class="slanted-box">
+                <label for="password" class="slanted-label">ENTER PASSWORD</label>
+                <div id="errorMsg" class="error" style="display:none;">Incorrect password. Try again.</div>
+                <input type="password" id="password" class="graffiti-input" placeholder="Enter password" required autocomplete="off">
+            </div>
+            <button type="submit" class="enter-btn" style="margin-top:24px;">ENTER</button>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById('loginForm');
+        const errorMsg = document.getElementById('errorMsg');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('password').value;
+            // Password is now 'CONGRATULATIONS77'
+            if (password === 'CONGRATULATIONS77') {
+                window.location.href = 'home.html'; // Redirect to your main page
+            } else {
+                errorMsg.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
