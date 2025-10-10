@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naute - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: #eaeaea;
+            font-family: 'Oswald', 'Roboto', Arial, sans-serif;
+        }
+        .navbar {
+            width: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px 0 24px 0;
+            border-bottom: 1.5px solid #222;
+        }
+        .nav-btn {
+            margin: 0 24px;
+            padding: 0;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-label {
+            font-family: 'Oswald', 'Roboto', Arial, sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 2px;
+            padding: 0 32px;
+            border: 2px solid #eaeaea;
+            border-radius: 16px;
+            background: linear-gradient(90deg, #222 0%, #444 100%);
+            box-shadow: 0 2px 12px rgba(180,180,180,0.12);
+            transition: border 0.2s, color 0.2s;
+        }
+        .nav-btn:hover .nav-label {
+            border: 2px solid #b0b0b0;
+            color: #b0b0b0;
+        }
+        .main-content {
+            padding: 64px 0 0 0;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                padding: 12px 0 12px 0;
+            }
+            .nav-label {
+                font-size: 1rem;
+                padding: 0 16px;
+            }
+            .main-content {
+                padding: 32px 0 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="nav-btn" onclick="location.href='home.html'">
+            <span class="nav-label">HOME</span>
+        </button>
+        <button class="nav-btn" onclick="location.href='shop.html'">
+            <span class="nav-label">SHOP</span>
+        </button>
+        <button class="nav-btn" onclick="location.href='show.html'">
+            <span class="nav-label">SHOW</span>
+        </button>
+        <button class="nav-btn" onclick="location.href='art.html'">
+            <span class="nav-label">ARTISTS</span>
+        </button>
+    </nav>
+    <div class="main-content">
+        <!-- Homepage intentionally left blank for now -->
+    </div>
+</body>
+</html>
