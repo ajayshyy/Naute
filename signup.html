@@ -147,8 +147,11 @@
         <div id="step2" class="step" style="display:none;">
             <div class="question">What's your name?</div>
             <form class="input-step" id="nameForm" autocomplete="off">
-                <input type="text" id="nameInput" class="input-field" placeholder="Enter your name" required>
-                <button type="submit" class="next-btn">Next</button>
+                <form action="https://formspree.io/f/yourFormID" method="POST" style="width:100%;display:flex;flex-direction:column;align-items:center;">
+                    <input type="text" name="name" class="input-field" placeholder="Enter your name" required>
+                    <input type="email" name="email" class="input-field" placeholder="Enter your email" required>
+                    <button type="submit" class="next-btn">Sign Up</button>
+                </form>
             </form>
         </div>
         <!-- Add more steps as needed -->
