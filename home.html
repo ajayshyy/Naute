@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naute - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@500;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -95,13 +95,21 @@
         </button>
     </nav>
     <div class="main-content">
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 700px; margin: 0 auto; padding: 48px 0;">
-            <button class="image-btn" style="background: none; border: none; cursor: pointer; padding: 0; outline: none;" onclick="location.href='silver-login.html'">
-                <img src="532A8156-5410-41A2-9056-3EB1868B5122.png" alt="Silver Button" style="width: 120px; height: auto; border-radius: 18px; box-shadow: 0 2px 12px #222;">
-            </button>
-            <button class="image-btn" style="background: none; border: none; cursor: pointer; padding: 0; outline: none;" onclick="location.href='gold-login.html'">
-                <img src="IMG_0063.jpeg" alt="Gold Button" style="width: 120px; height: auto; border-radius: 18px; box-shadow: 0 2px 12px #222;">
-            </button>
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 700px; margin: 0 auto; padding: 48px 0;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 900; letter-spacing: 8px; color: #eaeaea; background: linear-gradient(90deg, #b0b0b0 0%, #eaeaea 40%, #b0b0b0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 36px;">NAUTÈ</span>
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <button class="image-btn" style="background: none; border: none; cursor: pointer; padding: 0; outline: none;" onclick="location.href='silver-login.html'">
+                    <img src="532A8156-5410-41A2-9056-3EB1868B5122.png" alt="Silver Button" style="width: 120px; height: auto; border-radius: 18px; box-shadow: 0 2px 12px #222;">
+                </button>
+                <span style="margin-top: 12px; color: #b0b0b0; font-family: 'Oswald', 'Roboto', Arial, sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: 1px;">SILVER MEMBER LOGIN</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <button class="image-btn" style="background: none; border: none; cursor: pointer; padding: 0; outline: none;" onclick="location.href='gold-login.html'">
+                    <img src="IMG_0063.jpeg" alt="Gold Button" style="width: 120px; height: auto; border-radius: 18px; box-shadow: 0 2px 12px #222;">
+                </button>
+                <span style="margin-top: 12px; color: #bfa76a; font-family: 'Oswald', 'Roboto', Arial, sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: 1px; text-shadow: 0 1px 6px #222;">GOLD MEMBER LOGIN</span>
+            </div>
         </div>
     </div>
 </body>
